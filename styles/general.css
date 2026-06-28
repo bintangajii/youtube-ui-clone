@@ -1,0 +1,64 @@
+/* -- Reset & Base Styles ------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  padding-top: 108px;
+  margin: 0;
+  font-family: Roboto, Arial;
+  color: #f1f1f1;
+  background-color: #0e0e0e;
+}
+
+/* -- Typography ------------------------- */
+
+p {
+  margin: 0;
+}
+
+/* -- Buttons & Links ------------------------- */
+
+button {
+  position: relative;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* -- Tooltips ------------------------- */
+
+button[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 100;
+  visibility: hidden;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  background-color: rgba(72, 72, 72, 0.9);
+  opacity: 0;
+  transition:
+    opacity 0.15s ease-in-out,
+    visibility 0.15s;
+  pointer-events: none;
+}
+
+button[data-tooltip]:hover::after {
+  visibility: visible;
+  opacity: 1;
+}

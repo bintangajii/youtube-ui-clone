@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+  <head>
+    <title>YouTube | Practice project</title>
+
+    <!--  Font, Favicon & Style CSS -------------------------------------------->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+    <link rel="icon" href="assets/icons/youtube-1.svg" />
+
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+  </head>
+
+  <body>
+    <!-- Header -------------------------------------------->
+    <header class="header">
+      <div class="left-section">
+        <button class="btn-hamburger-menu" data-tooltip="Menu">
+          <img
+            class="icon"
+            src="assets/icons/hamburger-menu-icon.svg"
+            alt="menu"
+          />
+        </button>
+        <button class="btn-youtube" data-tooltip="Youtube Home">
+          <img
+            class="logo-youtube"
+            src="assets/icons/logo-icon.svg"
+            alt="youtube"
+          />
+        </button>
+      </div>
+
+      <div class="mid-section">
+        <input class="search-input" type="text" placeholder="Search" />
+        <button class="btn-search" data-tooltip="Search">
+          <img src="assets/icons/search-icon.svg" alt="search" class="icon" />
+        </button>
+        <button class="btn-voice-search" data-tooltip="Search with voice">
+          <img
+            class="icon"
+            src="assets/icons/mic-icon.svg"
+            alt="voice-search"
+          />
+        </button>
+      </div>
+
+      <div class="right-section">
+        <button class="btn-create-video" data-tooltip="Create Video">
+          <img
+            class="icon"
+            src="assets/icons/plus-icon.svg"
+            alt="create-video"
+          />
+          <p>Create</p>
+        </button>
+        <button class="btn-notification" data-tooltip="Notifications">
+          <img
+            class="icon"
+            src="assets/icons/bell-icon.svg"
+            alt="create-video"
+          />
+          <span class="badge-notification">5</span>
+        </button>
+        <div class="btn-profile-wrapper">
+          <button class="btn-profile" data-tooltip="Profile">
+            <img
+              src="assets/images/profile/profile.jpg"
+              alt="create-video"
+              class="profile"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sidebar ------------------------------------------->
+    <nav class="sidebar">
+      <div class="sidebar-btn-wrapper">
+        <button class="btn-sidebar btn-home" data-tooltip="Home">
+          <img class="icon" src="assets/icons/home.svg" alt="Home" />
+          Home
+        </button>
+        <button class="btn-sidebar btn-short" data-tooltip="Short">
+          <img class="icon" src="assets/icons/short.svg" alt="Short" />
+          Short
+        </button>
+        <button
+          class="btn-sidebar btn-create-wrapper"
+          data-tooltip="Create Video"
+        >
+          <div class="btn-create">
+            <img
+              class="icon"
+              src="assets/icons/plus-icon.svg"
+              alt="create-video"
+            />
+          </div>
+        </button>
+        <button
+          class="btn-sidebar btn-subscriptions"
+          data-tooltip="Subscriptions"
+        >
+          <img
+            class="icon"
+            src="assets/icons/Subscription.svg"
+            alt="Subscriptions"
+          />
+          Subscription
+        </button>
+        <button class="btn-sidebar btn-you-profile" data-tooltip="You">
+          <img
+            src="assets/images/profile/profile.jpg"
+            alt="create-video"
+            class="icon-profile"
+          />
+          You
+        </button>
+        <button class="btn-sidebar btn-you" data-tooltip="You">
+          <img class="icon icon-you" src="assets/icons/you.svg" alt="You" />
+          You
+        </button>
+      </div>
+
+      <div class="text-footer">
+        Practice project inspired by
+        <a href="https://www.youtube.com/@SuperSimpleDev" class="text-highlight"
+          >SuperSimpleDev</a
+        >. <br /><br />
+        <a
+          href="https://supersimple.dev/project/youtube"
+          class="text-highlight-footer"
+          >Official Reference</a
+        >
+        <br />
+        Built from scratch using <br />
+        HTML, CSS, & basic JS. 🚀<br />
+        by
+        <a
+          href="https://github.com/bintangajii"
+          class="text-highlight-footer"
+          style="text-decoration: none"
+          >Rahmad Bintang Aji</a
+        >, 2026.
+      </div>
+    </nav>
+
+    <!-- Main Content ---------------------------------------------->
+    <main class="main-content">
+      <section class="category-carousel">
+        <div class="category-pill-wrapper">
+          <button class="category-pill-active">All</button>
+          <button class="category-pill">Music</button>
+          <button class="category-pill">Live</button>
+          <button class="category-pill">Podcast</button>
+          <button class="category-pill">Playlist</button>
+          <button class="category-pill">Desktop Setup</button>
+          <button class="category-pill">AI</button>
+          <button class="category-pill">Deep House</button>
+          <button class="category-pill">Products</button>
+          <button class="category-pill">Investment</button>
+          <button class="category-pill">Gaming</button>
+          <button class="category-pill">Gaming</button>
+          <button class="category-pill">Smooth Jazz</button>
+          <button class="category-pill">Lo-fi</button>
+          <button class="category-pill">Gadget</button>
+          <button class="category-pill">Website</button>
+          <button class="category-pill">Recently uploaded</button>
+          <button class="category-pill">Watched</button>
+          <button class="category-pill">New to you</button>
+        </div>
+      </section>
+
+      <section id="video-container" class="video-grid"></section>
+    </main>
+
+    <!-- Script JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
