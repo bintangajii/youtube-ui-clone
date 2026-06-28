@@ -11,8 +11,10 @@
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  border-top: 1px solid #ffffff10;
-  background-color: #0e0e0e;
+  border-top: 1px solid #323232;
+  background-color: rgba(15, 15, 15, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
 }
 
 /* -- Sidebar Buttons ------------------------- */
