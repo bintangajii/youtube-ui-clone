@@ -5,7 +5,7 @@ This is my very first front-end development web project! In this project, I chal
 ## 🌟 Live Preview
 
 You can test and interact with the live website here:  
-👉 **[Check Out the Live Demo](https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME)**
+👉 **[Check Out the Live Demo](https://bintangajii.github.io/youtube-ui-clone/)**
 
 ### 🎥 Interactive Quick Demo
 
