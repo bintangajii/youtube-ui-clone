@@ -62,3 +62,19 @@ button[data-tooltip]:hover::after {
   visibility: visible;
   opacity: 1;
 }
+
+/* -- Scrollbar Customization ------------------------- */
+
+/* Mobile & Tablet Screens (Hide Scrollbar for Clean UI) */
+@media (max-width: 1024px) {
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  html,
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

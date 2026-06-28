@@ -51,6 +51,7 @@
 
 .video-grid {
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr;
   gap: 8px;
   min-width: 360px;
@@ -62,6 +63,7 @@
 .video-preview {
   position: relative;
   padding: 12px;
+  width: 100%;
   border-radius: 20px;
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
